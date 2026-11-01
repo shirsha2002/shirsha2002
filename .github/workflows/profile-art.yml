@@ -2,7 +2,7 @@ name: Profile art (3D contributions + snake)
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -30,6 +30,17 @@ jobs:
           github_user_name: shirsha2002
           outputs: |
             profile-3d-contrib/snake.svg?palette=github-dark&color_snake=#EDBB00&color_dots=#161b33,#0b3a75,#004D98,#7a0a3a,#A50044
+
+      - name: Recent activity feed
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          GH_USERNAME: shirsha2002
+          MAX_LINES: 8
+          COMMIT_NAME: Shirsha Mitra
+          COMMIT_EMAIL: 240193888+shirsha2002@users.noreply.github.com
+          COMMIT_MSG: "Update activity"
 
       - name: Commit
         run: |

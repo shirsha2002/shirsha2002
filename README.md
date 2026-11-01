@@ -138,6 +138,11 @@ A growing record of Python practice — the fundamentals behind every bigger bui
 
 </div>
 
+## ⚡ Latest Activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
 ## 🐍 Dribbling Through Contributions — @shirsha2002
 
 <div align="center">
