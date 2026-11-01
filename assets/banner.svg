@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f2c"/><stop offset=".55" stop-color="#1a0b2e"/><stop offset="1" stop-color="#2a0518"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffe27a"/><stop offset=".5" stop-color="#EDBB00"/><stop offset="1" stop-color="#c99700"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="crestClip"><path d="M0-70 L60-70 Q62 10 0 70 Q-62 10 -60-70Z"/></clipPath>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="stripes" width="80" height="360" patternUnits="userSpaceOnUse" patternTransform="skewX(-18)">
+      <rect width="40" height="360" fill="#004D98"/><rect x="40" width="40" height="360" fill="#A50044"/>
+    </pattern>
+  </defs>
+  <style>
+    .t{font:800 64px 'Segoe UI',Montserrat,Arial,sans-serif;letter-spacing:6px}
+    .s{font:600 20px 'Segoe UI',Arial,sans-serif;letter-spacing:5px;fill:#e8e8f5}
+    .m{font:700 15px Consolas,monospace;letter-spacing:3px;fill:#EDBB00}
+    .drift{animation:drift 14s linear infinite}
+    @keyframes drift{from{transform:translateX(0)}to{transform:translateX(-160px)}}
+    .float{animation:float 5s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    .sweep{animation:sweep 4s ease-in-out infinite}
+    @keyframes sweep{0%{transform:translateX(-200px)}60%,100%{transform:translateX(200px)}}
+    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.25}50%{opacity:1}}
+    .rise{animation:rise 1.2s ease-out both}
+    @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+  </style>
+  <rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+  <g opacity=".14" class="drift"><rect x="-200" width="1700" height="360" fill="url(#stripes)"/></g>
+  <!-- perspective pitch floor -->
+  <g stroke="#EDBB00" stroke-opacity=".2" fill="none">
+    <path d="M0 360 L600 230 L1200 360"/>
+    <path d="M150 360 L600 230 M300 360 L600 230 M450 360 L600 230 M750 360 L600 230 M900 360 L600 230 M1050 360 L600 230"/>
+    <path d="M90 340 H1110 M220 312 H980 M330 288 H870 M420 268 H780 M490 252 H710"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="90" cy="60" r="1.6" class="pulse"/><circle cx="260" cy="40" r="1.2" class="pulse" style="animation-delay:.6s"/>
+    <circle cx="520" cy="70" r="1.4" class="pulse" style="animation-delay:1.2s"/><circle cx="760" cy="36" r="1.2" class="pulse" style="animation-delay:.3s"/>
+    <circle cx="1150" cy="80" r="1.6" class="pulse" style="animation-delay:1.8s"/>
+  </g>
+  <g class="rise">
+    <text x="70" y="215" class="t" fill="url(#gold)" filter="url(#glow)">SHIRSHA MITRA</text>
+    <text x="72" y="258" class="s">SOFTWARE ENGINEER  ·  BIG DATA  ·  COMPUTER VISION</text>
+    <rect x="72" y="280" width="120" height="5" rx="2" fill="#004D98"/><rect x="196" y="280" width="120" height="5" rx="2" fill="#A50044"/><rect x="320" y="280" width="60" height="5" rx="2" fill="#EDBB00"/>
+  </g>
+  <!-- original floating shield emblem (personal, not the official club crest) -->
+  <g class="float">
+    <path transform="translate(1020 190)" d="M0-70 L60-70 Q62 10 0 70 Q-62 10 -60-70Z" fill="#000" opacity=".5"/>
+    <g transform="translate(1010 180)">
+      <path d="M0-74 L64-74 Q66 10 0 76 Q-66 10 -64-74Z" fill="#EDBB00"/>
+      <g clip-path="url(#crestClip)">
+        <rect x="-70" y="-80" width="140" height="160" fill="#004D98"/>
+        <rect x="-48" y="-80" width="20" height="160" fill="#A50044"/><rect x="-8" y="-80" width="20" height="160" fill="#A50044"/><rect x="32" y="-80" width="20" height="160" fill="#A50044"/>
+        <rect x="-70" y="-80" width="140" height="44" fill="#0a0f2c"/>
+        <text x="0" y="-48" text-anchor="middle" font-family="Segoe UI,Arial" font-weight="900" font-size="26" fill="#EDBB00">SM</text>
+        <circle cx="0" cy="18" r="17" fill="#fff" stroke="#0a0f2c" stroke-width="2"/>
+        <path d="M0 8 l9 6 -3 10 h-12 l-3-10z" fill="#0a0f2c"/>
+        <g class="sweep"><rect x="-20" y="-80" width="26" height="160" fill="url(#shine)" transform="skewX(-20)"/></g>
+      </g>
+    </g>
+  </g>
+  <text x="1010" y="290" text-anchor="middle" class="m">MÉS QUE UN CODER</text>
+</svg>

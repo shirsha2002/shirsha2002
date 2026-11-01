@@ -1,0 +1,11 @@
+{
+  "type": "normal",
+  "fileName": "profile-barca.svg",
+  "backgroundColor": "#0a0f2c",
+  "foregroundColor": "#e8e8f5",
+  "strongColor": "#EDBB00",
+  "weakColor": "#8b8fb3",
+  "radarColor": "#A50044",
+  "contribColors": ["#161b33", "#0b3a75", "#004D98", "#7a0a3a", "#A50044"],
+  "growingAnimation": true
+}

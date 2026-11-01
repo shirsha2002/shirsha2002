@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140">
+  <defs>
+    <pattern id="p" width="60" height="140" patternUnits="userSpaceOnUse"><rect width="30" height="140" fill="#004D98"/><rect x="30" width="30" height="140" fill="#A50044"/></pattern>
+    <linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f2c" stop-opacity=".2"/><stop offset="1" stop-color="#0a0f2c" stop-opacity=".85"/></linearGradient>
+  </defs>
+  <style>.w{animation:w 6s ease-in-out infinite alternate}@keyframes w{to{transform:translateX(-60px)}}.t{font:800 26px 'Segoe UI',Arial,sans-serif;letter-spacing:8px;fill:#EDBB00}</style>
+  <path d="M-60 40 Q300 0 600 40 T1260 40 V140 H-60Z" fill="url(#p)" class="w"/>
+  <path d="M0 40 Q300 0 600 40 T1200 40 V140 H0Z" fill="url(#f)"/>
+  <text x="600" y="105" text-anchor="middle" class="t">VISCA EL CODE · VISCA EL BARÇA</text>
+</svg>
