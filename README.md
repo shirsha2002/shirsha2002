@@ -141,6 +141,7 @@ A growing record of Python practice — the fundamentals behind every bigger bui
 ## ⚡ Latest Activity
 
 <!--START_SECTION:activity-->
+1. 🚀 Published release [Thesis proposal materials and completed-study checkpoints - 24 November 2026](https://github.com/shirsha2002/color-constancy-depth-thesis/releases/tag/thesis-handoff-2026-11-24) in [shirsha2002/color-constancy-depth-thesis](https://github.com/shirsha2002/color-constancy-depth-thesis)
 <!--END_SECTION:activity-->
 
 ## 🐍 Dribbling Through Contributions — @shirsha2002
